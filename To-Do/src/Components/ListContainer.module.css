@@ -1,0 +1,29 @@
+.ListContainer {
+   color: blue;
+   /* margin: 10px; */
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   /* width: 250px; */
+}
+
+.listItem {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5px 0;
+   margin: 5px;
+}
+
+.button {
+   background-color: lightblue;
+   border: none;
+   padding: 5px 10px;
+   cursor: pointer;
+   border-radius: 5px;
+   transition: background-color 0.3s ease;
+}
+
+.button:hover {
+   background-color: blue;
+   color: white;
+}
