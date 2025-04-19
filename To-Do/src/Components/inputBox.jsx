@@ -18,7 +18,7 @@ function InputBox({addItem, input, date }) {
                 <input
                     type="date"
                     className={Styles.inputStyle}
-                    // value={date}
+                    // value={date}abhise
                     ref={date}
                     // onChange={()=>{}}
                    
