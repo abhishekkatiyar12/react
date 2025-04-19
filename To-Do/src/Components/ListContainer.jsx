@@ -1,6 +1,6 @@
 import Styles from './ListContainer.module.css';
 
-function ListContainer({handleclick, tasks}) {
+function ListContainer({ deleteItem,tasks}) {
    
 
 
@@ -9,8 +9,10 @@ function ListContainer({handleclick, tasks}) {
            <ul>
                {tasks.map((item, index) => (
                    <li key={index} className={Styles.listItem}>
-                       <span>{item}</span>
-                       <button className={Styles.button} value={item}  onClick={()=>handleclick(item)}>Buy</button>
+                       <span>{item.task}</span>
+                       <span>{item.date}</span>
+                       {/* <button className={Styles.button} value={item}  onClick={()=>handleclick(item)}>Buy</button> */}
+                       <button className={Styles.button} value={item}  onClick={()=>deleteItem(item.task)}>Delete</button>
                    </li>
                ))}
            </ul>
