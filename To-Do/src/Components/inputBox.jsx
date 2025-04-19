@@ -1,9 +1,12 @@
 
+import { useContext } from 'react';
 import Styles from './inputBox.module.css';
+import Todocontext from '../store/to-do-items';
 
-function InputBox({addItem, input, date }) {
+function InputBox({input, date }) {
 
-
+ let Context=useContext(Todocontext);
+ let addItem=Context.addItem
     return (
         <>
             <div className={Styles.input}>
@@ -18,7 +21,7 @@ function InputBox({addItem, input, date }) {
                 <input
                     type="date"
                     className={Styles.inputStyle}
-                    // value={date}abhise
+                    // value={date}
                     ref={date}
                     // onChange={()=>{}}
                    

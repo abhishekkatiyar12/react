@@ -1,9 +1,13 @@
-function ErrorMessage(){
+import { useContext } from "react";
+import Todocontext from "../store/to-do-items";
+
+
+function ErrorMessage() {
+    const Context = useContext(Todocontext);
+    const tasks = Context?.TodoItems||[];
     return (
         <>
-        <div>
-            please add the tasks
-        </div>
+            {tasks.length === 0 && <div>please add the tasks</div> }
         </>
     )
 
