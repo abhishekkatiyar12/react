@@ -1,10 +1,14 @@
 import Styles from './Container.module.css'
-function Container(props){
+import InnerContainer from '../store/to-do-items';
 
+function Container(props){
 
 return (
     <>
-    <div className={Styles.containerstyle}>{props.children}</div>
+     <InnerContainer>
+     <div className={Styles.containerstyle}>{props.children}</div>
+     </InnerContainer>
+    
     </>
 )
 }
