@@ -1,3 +1,3 @@
 learning react
 with prashant sir 
-of KG coding
+of KG Coding
